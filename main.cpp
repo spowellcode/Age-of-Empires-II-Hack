@@ -62,13 +62,13 @@ int main()
 
         DWORD clientBase = dwGetModuleBaseAddress(_T(moduleName), procID);
         ReadProcessMemory(handle, (LPCVOID)(clientBase + 0x0028E8F8), &baseAddress, sizeof(baseAddress), NULL);
-        cout << "Base Addy is: " << std::hex << baseAddress << std::endl;
+        cout << "Base Addy is: " << hex << baseAddress << endl;
         ReadProcessMemory(handle, (LPCVOID)(baseAddress + 0x4c), &baseAddress, sizeof(baseAddress), NULL);
-        cout << "1: " << std::hex << baseAddress << std::endl;
+        cout << "1: " << hex << baseAddress << endl;
         ReadProcessMemory(handle, (LPCVOID)(baseAddress + 0x4), &baseAddress, sizeof(baseAddress), NULL);
-        cout << "2: " << std::hex << baseAddress << std::endl;
+        cout << "2: " << hex << baseAddress << endl;
         ReadProcessMemory(handle, (LPCVOID)(baseAddress + 0xa8), &baseAddress, sizeof(baseAddress), NULL);
-        cout << "3: " << std::hex << baseAddress << std::endl;
+        cout << "3: " << hex << baseAddress << endl;
         Mem = baseAddress;
 
         if (procID = NULL)
