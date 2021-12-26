@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1577051480 source:c:\users\deep blue\documents\aoehack\aoebravo\main.cpp
-	<windows.h>
-	<stdio.h>
-	<iostream>
-	<vector>
-	<TlHelp32.h>
-	<tchar.h>
-
